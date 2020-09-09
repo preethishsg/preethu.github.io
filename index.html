@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta name="viewport" content="width=device-width;initial-scale=1.0;"/>
+      <title>My Blog</title>
+      <link href="https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <script src="https://kit.fontawesome.com/a076d05399.js"></script>    
+  </head>
+
+  <body>
+    <!--it is header-->
+    <div id="header">
+      <div class="container">
+        <a id="header-title" href="index.html">My Blog</a>
+      </div>
+    </div>
+
+    <!--it is content-->    
+    <div id="content">
+      <div class="container"> 
+        <div class="topnav"> <!--top navigation-->
+          <a class="active" href="#header">HOME</a>
+          <a href="#about">ABOUT</a>
+          <a href="#career">CAREER</a>
+          <a href="#cont">CONTACT</a>
+        </div>
+
+          <a onclick="topFunction()" id="myBtn" title="Go to top"><b>^</b></a>
+            
+          <script src="scrollup.js"></script>  
+          
+          <h2 id="about" class="section-dec">ABOUT ME</h2>
+
+        <div class="Post-rounded">
+            <img src="/home/preethu/Desktop/preethu777.github.io/preethu.JPG" height="400px",width="400px"/>
+        </div>
+        
+          <h1 class="name">PREETHISH S GANGOLLI</h1>
+          <p class="post-date">Kundapura</p>
+          <h2 class="post-title">student | self learner</h2>
+          <div class="about-content">
+            <p>Father name : Sudhakara G</p>
+            <p>Mother name : Sahana</p>
+            <p>DOB:31/01/2000</p>
+        </div>
+
+          <h2 id="career" class="section-dec">MY CAREER</h2>
+          
+        <!--button for College-->
+        <section>
+        <div class="button">
+          <button onclick="myFunction1()">DEGREE</button>
+        </div>
+
+         <div id="myDIV1">
+              <p style="font-family: 'Spicy Rice', cursive;" >Bhandarkars' Arts and Science College, Kundapura</p>
+              <p style="font-family: 'Acme', sans-serif;" >Bachelor of Computer Application(BCA)</p>
+         </div>
+
+         <script>
+            var x1=document.getElementById("myDIV1");
+            var x2=document.getElementById("myDIV2");
+            var x3=document.getElementById("myDIV3");
+            function myFunction1()
+             {
+                if (x1==1)
+                {
+                  document.getElementById("myDIV1").style.display = "block";
+                  document.getElementById("myDIV2").style.display = "none";
+                  document.getElementById("myDIV3").style.display = "none";
+                  document.getElementById("myDIV4").style.display = "none";
+                  return x1=0;
+                }
+                else {
+                        document.getElementById("myDIV1").style.display = "none";
+                        return x1=1;
+                      }
+            }
+          </script>
+
+
+          <div class="button">
+            <button onclick="myFunction2()"> PUC </button>
+          </div>
+
+          <div id="myDIV2">
+              <p style="font-family: 'Spicy Rice', cursive;" >R.N.Shetty Pre University College, Kundapura</p>
+              <p style="font-family: 'Acme', sans-serif;" >Pre University College(PUC)</p>
+          </div>
+
+            <script>
+              function myFunction2()
+               {
+                var x1 = document.getElementById("myDIV1");
+                var x2 = document.getElementById("myDIV2");
+                var x3 = document.getElementById("myDIV3");
+                if (x2.style.display === "none")
+                {
+                  x2.style.display = "block";
+                  x1.style.display = "none";
+                  x3.style.display = "none";
+                  x4.style.display = "none";
+                }
+                  else {
+                          x2.style.display = "none";
+                        }
+              }
+            </script>
+
+          <div class="button">
+            <button onclick="myFunction3()"> SSLC </button>
+          </div>
+            <div id="myDIV3">
+              <p style="font-family: 'Spicy Rice', cursive;" >Govt. High School, Kundapura</p>
+              <p style="font-family: 'Acme', sans-serif;" >Secondary School Leaving Certificate(SSLC)</p>
+          </div>
+
+          <script>
+            function myFunction3()
+             {
+              var x1 = document.getElementById("myDIV1");
+                var x2 = document.getElementById("myDIV2");
+                var x3 = document.getElementById("myDIV3");
+                if (x3.style.display === "none")
+                {
+                  x3.style.display = "block";
+                  x1.style.display = "none";
+                  x2.style.display = "none";
+                  x4.style.display = "none";
+                }
+                else {
+                        x3.style.display = "none";
+                      }
+            }
+            </script>
+
+          </div>
+        </div>
+
+        <div class="button">
+          <button onclick="myFunction4()"> PRIMARY </button>
+        </div>
+          <div id="myDIV4">
+            <p style="font-family: 'Spicy Rice', cursive;" >Govt. Primary School, Kudumallige Thirthahalli</p>
+            <p style="font-family: 'Acme', sans-serif;" >primary studies</p>
+        </div>
+
+        <script>
+          function myFunction4()
+           {
+            var x1 = document.getElementById("myDIV1");
+              var x2 = document.getElementById("myDIV2");
+              var x3 = document.getElementById("myDIV3");
+              var x4 = document.getElementById("myDIV4")
+              if (x4.style.display === "none")
+              {
+                x4.style.display = "block";
+                x1.style.display = "none";
+                x2.style.display = "none";
+                x3.style.display = "none";
+              }
+              else {
+                      x4.style.display = "none";
+                    }
+          }
+          </script>
+
+        </div>
+      </div>
+      </section>
+
+      <h2 id="cont" class="section-dec">GET IN TOUCH</h2>
+     
+      <!--The div element for the map -->
+      <div id="map"></div>
+      <script>
+        // Initialize and add the map
+        function initMap() {
+        var Kundapura = {lat: 13.6235, lng: 74.6917};
+        var map = new google.maps.Map(
+        document.getElementById('map'), {zoom: 15, center: Kundapura});
+        var marker = new google.maps.Marker({position: Kundapura, map: map});
+        }
+      </script>
+      
+      <script defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfcD72XqY5GZZDAL7cprI9ogcHUrU6Iwo&callback=initMap">
+      </script>
+     
+      <!--it is footer-->
+      <div id="footer">
+        <div class="container">
+          <div class="column">
+
+            <h2 class="link-title">MY LINKS</h2>
+          <div>
+            <ul>
+              <li>
+                <a style="color:#4267B2" href="https://facebook.com/Preethish.s.gangolli/" target="_blank">
+                  <i class ="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li>
+                <a style="color:#E1306C" href="https://instagram.com/preethu_gangolli/" target="_blank">
+                  <i class ="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a style="color:#1DA1F2" href="https://twitter.com/preethugangolli/" target="_blank">
+                 <i class ="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a style="color:#ff0000" href="https://youtube.com" target="_blank">
+                 <i class ="fab fa-youtube"></i>
+                </a>
+              </li>
+              <li>
+                <a style="color:#00ff40" href="https://wa.me/918310276482?text=hello" target="_blank">
+                  <i class ="fab fa-whatsapp"></i>
+                </a>
+              </li>
+              <li>
+                <a style="color:#ffffff" href="mailto:preethishsg@gmail.com">
+                  <i class="fas fa-envelope"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
